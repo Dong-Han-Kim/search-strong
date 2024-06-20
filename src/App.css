@@ -1,13 +1,19 @@
 .main {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	height: 100dvh;
+}
+
+.main_content {
+	height: 60dvh;
+	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .search {
 	margin: 15px;
+	height: 100px;
 }
 
 .search form {
@@ -25,6 +31,16 @@
 	width: 30px;
 	height: 30px;
 	margin: 0;
+}
+
+.auto_complete {
+	border: 1px solid black;
+}
+
+.auto_description {
+	background-color: rgba(219, 219, 217, 0.5);
+	margin-top: 0;
+	padding: 10px;
 }
 
 .result {
