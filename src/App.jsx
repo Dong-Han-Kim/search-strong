@@ -70,7 +70,7 @@ function App() {
 						})}
 					</ul>
 				)}
-				{searched && result.length === 0 && '검색 결과가 없습니다. 검색어를 확인해주세요.'}
+				{searched && result.length === 0 && '검색 결과가 없습니다. 검색어와 띄어쓰기를 확인해주세요.'}
 			</section>
 		</main>
 	);
