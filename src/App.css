@@ -6,6 +6,10 @@
 	flex-direction: column;
 }
 
+.search {
+	margin: 15px;
+}
+
 .search form {
 	display: flex;
 }

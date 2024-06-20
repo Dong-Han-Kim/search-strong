@@ -25,7 +25,7 @@ function App() {
 	}
 
 	function findStrong(resultItem, strongValue) {
-		if (!strongValue) return text;
+		if (!strongValue) return resultItem;
 		const lowResultItem = resultItem.toLowerCase();
 		const lowStrongValue = strongValue.toLowerCase();
 		const startIndex = lowResultItem.indexOf(lowStrongValue);
@@ -71,7 +71,7 @@ function App() {
 						})}
 					</ul>
 				)}
-				{searched && result.length === 0 && '검색 결과가 없습니다.'}
+				{searched && result.length === 0 && '검색 결과가 없습니다. 검색어를 확인해주세요.'}
 			</section>
 		</main>
 	);
