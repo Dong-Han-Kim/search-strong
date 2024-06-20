@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import { search } from './assets/searchWord';
-import { text } from '@fortawesome/fontawesome-svg-core';
 
 function App() {
 	const [value, setValue] = useState('');
