@@ -31,4 +31,12 @@ export const search = [
 		id: 'span',
 		sentence: 'span 태그가 있습니다.',
 	},
+	{
+		id: 'p',
+		sentence: 'p 태그가 있습니다.',
+	},
+	{
+		id: 'li',
+		sentence: 'li 태그가 있습니다.',
+	},
 ];
