@@ -31,7 +31,7 @@ function App() {
 		const startIndex = lowResultItem.indexOf(lowStrongValue);
 
 		if (startIndex === -1) {
-			return text;
+			return resultItem;
 		}
 
 		const endIndex = startIndex + strongValue.length;
