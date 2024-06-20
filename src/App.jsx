@@ -67,7 +67,12 @@ function App() {
 			<div className="main_content">
 				<section className="search">
 					<form onSubmit={handleSubmit}>
-						<input type="text" value={value} onChange={handleInputChange} />
+						<input
+							type="text"
+							placeholder="검색어를 입력하세요."
+							value={value}
+							onChange={handleInputChange}
+						/>
 						<button onClick={findValue}>
 							<FontAwesomeIcon icon={faSearch} />
 						</button>
