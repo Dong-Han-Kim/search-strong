@@ -8,7 +8,7 @@ function App() {
 	const [value, setValue] = useState('');
 	const [result, setResult] = useState([]);
 	const [searched, setSearched] = useState(false);
-	const [autoComplete, setAuotoComplete] = useState([]);
+	const [autoComplete, setAutoComplete] = useState([]);
 
 	const handleInputChange = (e) => {
 		const inputValue = e.target.value;
@@ -19,11 +19,11 @@ function App() {
 	};
 
 	const fliterAutoComplete = (inputValue) => {
-		if (!inputValue) return setAuotoComplete([]);
+		if (!inputValue) return setAutoComplete([]);
 		const fliterValue = search
 			.filter((item) => item.sentence.toLowerCase().includes(inputValue))
 			.map((item) => item.sentence);
-		setAuotoComplete(fliterValue);
+		setAutoComplete(fliterValue);
 	};
 
 	function findValue() {
@@ -31,12 +31,12 @@ function App() {
 		if (inputValue.length === 0) {
 			setResult([]);
 			setSearched(true);
-			setAuotoComplete([]);
+			setAutoComplete([]);
 		} else {
 			const searchFilter = search.filter((word) => word.sentence.toLowerCase().includes(inputValue));
 			setResult(searchFilter);
 			setSearched(true);
-			setAuotoComplete([]);
+			setAutoComplete([]);
 		}
 	}
 
