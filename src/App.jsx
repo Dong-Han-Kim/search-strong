@@ -28,10 +28,16 @@ function App() {
 
 	function findValue() {
 		const inputValue = value.toLowerCase();
-		const searchFilter = search.filter((word) => word.sentence.toLowerCase().includes(inputValue));
-		setResult(searchFilter);
-		setSearched(true);
-		setAuotoComplete([]);
+		if (inputValue.length === 0) {
+			setResult([]);
+			setSearched(true);
+			setAuotoComplete([]);
+		} else {
+			const searchFilter = search.filter((word) => word.sentence.toLowerCase().includes(inputValue));
+			setResult(searchFilter);
+			setSearched(true);
+			setAuotoComplete([]);
+		}
 	}
 
 	function findStrong(resultItem, strongValue) {
